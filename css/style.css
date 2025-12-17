@@ -69,17 +69,17 @@ p {
 }
 
 .highlight {
-    color: #1db954;
+    color: #2383e9;
 }
 
 .number {
     font-size: 4rem;
     font-weight: 900;
-    color: #1db954;
+    color: #2383e9;
 }
 
 .gradient {
-    background: linear-gradient(135deg, #1db954, #1ed760);
+    background: linear-gradient(135deg, #ffffff, #f8f9f9);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -101,6 +101,9 @@ p {
 .bg-5 { background-image: url('../img/bg5.jpg'); }
 .bg-6 { background-image: url('../img/bg6.jpg'); }
 .bg-7 { background-image: url('../img/bg7.jpg'); }
+.bg-8 { background-image: url('../img/bg8.jpg'); }
+.bg-9 { background-image: url('../img/bg9.jpg'); }
+.bg-10 { background-image: url('../img/bg10.jpg'); }
 .bg-final { background-image: url('../img/bg-final.jpg'); }
 
 @media (max-width: 768px) {
