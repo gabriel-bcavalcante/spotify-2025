@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #000;
+    color: #fff;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+section {
+    height: 100vh;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Overlay escuro para legibilidade */
+section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+}
+
+section > * {
+    position: relative;
+    z-index: 1;
+}
+
+.slide {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.slide.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.center {
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1.3rem;
+    max-width: 600px;
+}
+
+.highlight {
+    color: #1db954;
+}
+
+.number {
+    font-size: 4rem;
+    font-weight: 900;
+    color: #1db954;
+}
+
+.gradient {
+    background: linear-gradient(135deg, #1db954, #1ed760);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.final {
+    background: linear-gradient(135deg, #1db954, #000);
+}
+
+.heart {
+    font-size: 4rem;
+    margin-top: 20px;
+}
+
+/* BACKGROUNDS */
+.bg-1 { background-image: url('../img/bg1.jpg'); }
+.bg-2 { background-image: url('../img/bg2.jpg'); }
+.bg-3 { background-image: url('../img/bg3.jpg'); }
+.bg-4 { background-image: url('../img/bg4.jpg'); }
+.bg-5 { background-image: url('../img/bg5.jpg'); }
+.bg-6 { background-image: url('../img/bg6.jpg'); }
+.bg-7 { background-image: url('../img/bg7.jpg'); }
+.bg-final { background-image: url('../img/bg-final.jpg'); }
+
+@media (max-width: 768px) {
+    h1 { font-size: 2.2rem; }
+    h2 { font-size: 1.8rem; }
+    p { font-size: 1.1rem; }
+}
