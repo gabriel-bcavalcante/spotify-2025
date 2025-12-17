@@ -1,229 +1,90 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<title>Nossa Retrospectiva 🖤</title>
+    <meta charset="UTF-8">
+    <title>Nossa Retrospectiva 🖤</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Fonte estilo Spotify -->
-<link href="https://fonts.googleapis.com/css2?
-family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- Fonte -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
 
-<style>
-
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    body {
-        font-family: 'Montserrat', sans-serif;
-        background: #000;
-        color: #fff;
-        scroll-behavior: smooth;
-        overflow-x: hidden;
-    }
-
-    section {
-        height: 100vh;
-        padding: 60px 40px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        position: relative;
-    }
-
-    .slide {
-        opacity: 0;
-        transform: translateY(40px);
-        transition: all 0.8s ease;
-    }
-
-    .slide.active {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-    h1 {
-        font-size: 3rem;
-        font-weight: 900;
-        margin-bottom: 20px;
-    }
-
-    h2 {
-        font-size: 2.2rem;
-        margin-bottom: 15px;
-    }
-
-    p {
-        font-size: 1.3rem;
-        max-width: 600px;
-    }
-
-    .highlight {
-        color: #1db954;
-    }
-
-    .number {
-        font-size: 4rem;
-        font-weight: 900;
-        color: #1db954;
-    }
-
-    .gradient {
-        background: linear-gradient(135deg, #1db954, #1ed760);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    .center {
-        align-items: center;
-        text-align: center;
-    }
-
-    .final {
-        background: linear-gradient(135deg, #1db954, #000);
-    }   
-
-    .heart {
-        font-size: 4rem;
-        margin-top: 20px;
-    }
-
-    @media (max-width: 768px) {
-        h1 { font-size: 2.2rem; }
-        h2 { font-size: 1.8rem; }
-        p { font-size: 1.1rem; }
-    }
-
-</style>
-
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-<!-- SLIDE 1 -->
-<section class="slide center">
-<h1 class="gradient">Nossa Retrospectiva 🖤</h1>
 
-<p>Uma viagem pelos nossos momentos mais especiais</p>
-</section>
-<!-- SLIDE 2 -->
-<section class="slide">
-<h2>Nossa música do ano
-
-🎵
-
-</h2>
-
-<p class="highlight">"COLOQUE AQUI O NOME DA MÚSICA"</p>
-<p>Porque toda vez que toca, lembro de você.</p>
-</section>
-<!-- SLIDE 3 -->
-<section class="slide">
-<h2>Escutada juntos</h2>
-<div class="number" data-target="237">0</div>
-<p>vezes (e ainda não enjoamos
-
-😄
-
-)</p>
-
+<section class="slide center bg-1">
+    <h1 class="gradient">Nossa Retrospectiva 🖤</h1>
+    <p>Uma viagem pela nossa história</p>
 </section>
 
-<!-- SLIDE 4 -->
-<section class="slide">
-<h2>Nosso lugar favorito
-
-📍
-
-</h2>
-
-<p class="highlight">"NOME DO LUGAR"</p>
-<p>Onde criamos memórias inesquecíveis.</p>
+<section class="slide bg-2">
+    <h2>Era uma vez, uma menina de azul...</h2>
+    <p class="highlight">"Djavan - Azul"</p>
+    <p>No dia 15 de Fevereiro, o verso do Djavan sobre o amor ser azul fez mais sentido 💙</p>
 </section>
-<!-- SLIDE 5 -->
-<section class="slide">
-<h2>A frase que mais falamos
 
-😂
-
-</h2>
-
-<p class="gradient">"FRASE INTERNA DE VOCÊS"</p>
+<section class="slide bg-3">
+    <h2>O Presente de Aniversário 🎁</h2>
+    <p class="highlight">"Natiruts - Presente De Um Beija-Flor"</p>
+    <p>No dia 8 de Março, ganhei o maior presente da minha vida... estou feliz agora 🙏</p>
 </section>
-<!-- SLIDE 6 -->
-<section class="slide">
-<h2>Tempo juntos
 
-💕
-
-</h2>
-
-<div class="number" data-target="420">0</div>
-<p>dias vivendo nossa melhor história.</p>
+<section class="slide bg-4">
+    <h2>Nossa música do ano 🎵</h2>
+    <p class="highlight">"Emicida - Alma Gêmea"</p>
+    <p>Uma dose só, dividida em dois copos... essa música é a testemunha da nossa alma gêmea</p>
 </section>
-<!-- SLIDE 7 -->
-<section class="slide">
-<h2>Momentos favoritos
 
-💌
-
-</h2>
-
-<p>• Viagens<br>
-• Risadas sem motivo<br>
-• Abraços demorados<br>
-• Conversas que curam</p>
+<section class="slide bg-5">
+    <h2>Escutada juntos</h2>
+    <div class="number" data-target="346">0</div>
+    <p>Essa seleção ta mais pesada que a do Brasil em 2002, nossa conexão musical acontece aqui 🎼</p>
 </section>
-<!-- SLIDE FINAL -->
-<section class="slide center final">
-<h1>Obrigado por existir
 
-💚
-
-</h1>
-
-<p>Essa retrospectiva é só um resumo...<br>
-O melhor ainda estamos vivendo juntos.</p>
-<div class="heart">
-
-💚
-
-</div>
-
+<section class="slide bg-6">
+    <h2>Nosso lugar favorito 📍</h2>
+    <p class="highlight">"Arena Corinthians 🦅"</p>
+    <p>O lugar que mais fomos esse ano? Não podia ser outro!! Corinthians faz parte da nossa história ⚫⚪</p>
 </section>
-<script>
-const slides = document.querySelectorAll('.slide');
-const observer = new IntersectionObserver(entries => {
 
-entries.forEach(entry => {
-if (entry.isIntersecting) {
-entry.target.classList.add('active');
-// Anima números
-const number = entry.target.querySelector('.number');
-if (number && !number.classList.contains('done')) {
-animateNumber(number);
-number.classList.add('done');
-}
-}
-});
-}, { threshold: 0.4 });
-slides.forEach(slide => observer.observe(slide));
-function animateNumber(element) {
-const target = +element.getAttribute('data-target');
-let count = 0;
-const increment = target / 100;
-const interval = setInterval(() => {
-count += increment;
-if (count >= target) {
-element.innerText = target;
-clearInterval(interval);
-} else {
-element.innerText = Math.floor(count);
-}
-}, 20);
-}
-</script>
+<section class="slide bg-7">
+    <h2> Nosso artista favorito</h2>
+    <p class="gradient">"BK"</p>
+    <p>O Padrinho do nosso relacionamento, no dia 13 de Julho escutamos essa juntos ao vivo, para 
+        concretizar a melhor das vidas!</p>
+</section>
+
+<section class="slide bg-8">
+    <h2>Nosso dia 20</h2>
+    <p class="highlight">"Djonga - Melhor que ontem"</p>
+    <p>"Meu verão, meu inverno, meu céu, minha namorada!" Obrigado por dizer sim, hoje até quem me vê na fila do pão
+        lendo o jornal, sabe que eu te encontrei 🖤 </p>
+</section>
+
+<section class="slide bg-8">
+    <h2>Tempo juntos</h2>
+    <div class="number" data-target="304">0</div>
+    <p>dias vivendo a melhor das vidas!</p>
+</section>
+
+<section class="slide bg-7">
+    <h2>Momentos</h2>
+    <p>Entre filmes e séries, rolê em familia, com os amigos, academia, parque, eventos, o melhor de tudo
+        será sempre partilhar a vida boa com você 🖤 </p>
+</section>
+
+<section class="slide center final bg-final">
+    <h1>Obrigado por tudo 🖤 </h1>
+    <p>
+        Sabe o melhor de toda essa história? <br>
+        É que tudo isso, é só o começo... <br>
+        Feliz nosso dia meu amor! Que 2026 seja abençoado para nós 🙏
+    </p>
+    <div class="heart">🖤</div>
+</section>
+
+<script src="js/script.js"></script>
 </body>
 </html>
